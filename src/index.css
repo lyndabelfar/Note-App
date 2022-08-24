@@ -1,13 +1,148 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
+.toggle-btn{
+  border-radius: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(204, 204, 204);
+  padding: 7px;
+}
+
+.container{
+  width: 80%;
+  min-height: 100vh;
+}
+
+.dark-mode{
+  background: black;
+}
+.dark-mode h1{
+  color: white;
+}
+#root{
+  width: 100%;
+}
+.search-input{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(204, 204, 204);
+  padding: 7px;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.note{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 32%;
+  background: rgb(236, 226, 128);
+  border: 1px solid rgb(236, 226, 128);
+  border-radius: 15px;
+  height: 200px;
+  margin: 10px;
+}
+
+
+.bottom-note{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.note-title{
+  font-size: 1.2rem;
+}
+
+.notes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.create-note-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 32%;
+  background: rgb(31, 128, 141);
+  border: 1px solid rgb(31, 128, 141);
+  border-radius: 15px;
+  height: 200px;
+  margin: 10px;
+}
+
+
+.create-note-input{
+  color: rgba(0, 0, 0, 0.863);
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+}
+
+.bottom-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.form-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  height: 100px;
+}
+
+.add-note-btn{
+  border-radius: 25px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(204, 204, 204);
+  padding: 7px;
+  font-size: 1.1rem;
+}
+
+
+.remaining-letters{
+  font-size: 1.25rem;
+  
+}
+button{
+  cursor: pointer;
+}
+
+
+.refresh-btn{
+  background: rgb(56, 172, 81);
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(56, 172, 81);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
